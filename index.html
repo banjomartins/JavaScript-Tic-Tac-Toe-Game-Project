@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Space-Themed Demo Site</title>
+    <!-- Bootstrap CSS (optional, used here for faster responsive layout) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Project styles separated from HTML as requested -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ========================= NAVBAR ========================= -->
+    <!-- Top navigation with anchors to page sections for quick access -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#hero">Orbital Demo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========================= HERO / HEADER ========================= -->
+    <!-- Full-width header with background image provided in the prompt -->
+    <header id="hero" class="hero-section d-flex align-items-center text-white">
+      <!-- A dark gradient overlay improves text contrast over the image -->
+      <div class="hero-overlay"></div>
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 text-center">
+            <h1 class="display-4 fw-bold mb-3">Exploring the Edge of Space</h1>
+            <p class="lead mb-4">
+              Building responsive web experiences with HTML, CSS, and Bootstrap.
+            </p>
+            <a href="#about" class="btn btn-primary btn-lg me-2">Learn More</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========================= ABOUT SECTION ========================= -->
+    <!-- Two-column layout: image (left) and text (right). Content as provided. -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-5">
+            <!-- About image (same as provided contact/about image) -->
+            <img
+              src="https://sxcontent9668.azureedge.us/cms-assets/assets/Eva_Suit_Desktop_alternate_1cf9bae18e.jpg"
+              class="img-fluid rounded-3 shadow-sm"
+              alt="Astronaut EVA suit illustration"
+            />
+          </div>
+          <div class="col-md-7">
+            <h2 class="section-title">About Us</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero facilis quis eaque, sapiente soluta ducimus adipisci totam amet quidem excepturi! Temporibus maxime alias ad modi praesentium optio illo ducimus esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magni quis est quibusdam eaque ratione maiores ex nobis asperiores, ducimus ipsam minima quo nihil ab nam enim consequuntur, odio sapiente?
+            </p>
+            <p class="mb-0">
+              We love crafting clean, accessible UIs with semantic HTML, modern CSS, and the power of Bootstrap's responsive grid.
+            </p>
+          </div>
+        </div>
+
+        <!-- Optional example table to showcase additional structured content -->
+        <div class="row mt-5">
+          <div class="col-12">
+            <h3 class="h5 mb-3">Mission Stats</h3>
+            <div class="table-responsive">
+              <table class="table table-striped table-hover align-middle">
+                <thead class="table-dark">
+                  <tr>
+                    <th scope="col">Mission</th>
+                    <th scope="col">Vehicle</th>
+                    <th scope="col">Launch Site</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Aurora I</th>
+                    <td>Falcon-class</td>
+                    <td>LC-39A</td>
+                    <td><span class="badge bg-success">Success</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nebula IX</th>
+                    <td>Heavy-class</td>
+                    <td>VAFB SLC-4E</td>
+                    <td><span class="badge bg-warning text-dark">Scheduled</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Zenith</th>
+                    <td>Star-class</td>
+                    <td>Boca Chica</td>
+                    <td><span class="badge bg-info text-dark">In Prep</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= PROFILE / BIO ========================= -->
+    <!-- Centered profile with circular image and short bio paragraph provided. -->
+    <section id="profile" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <img
+              src="https://shop.spacex.com/cdn/shop/files/Mechazilla_wall_decal_250x.png"
+              class="profile-image mb-3"
+              width="160"
+              height="160"
+              alt="Profile avatar"
+            />
+            <h2 class="section-title">Crew Bio</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis voluptas eius minima excepturi, a ducimus mollitia temporibus accusamus sequi, magnam minus dolore incidunt delectus libero dolores! Aliquam, saepe ratione!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CONTACT ========================= -->
+    <!-- Contact section with background image and accessible form -->
+    <section id="contact" class="contact-section text-white py-5 position-relative">
+      <div class="contact-overlay"></div>
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="section-title text-center text-white">Contact</h2>
+            <!-- Contact form uses labels and required fields for accessibility and UX -->
+            <form class="row g-3" aria-label="Contact form">
+              <div class="col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" required />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="jane@example.com" required />
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+              </div>
+              <div class="col-12 d-grid d-sm-flex justify-content-sm-end gap-2">
+                <button type="reset" class="btn btn-outline-light">Reset</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= FOOTER ========================= -->
+    <!-- Simple footer with back-to-top anchor -->
+    <footer class="py-4 bg-dark text-center text-white-50">
+      <div class="container small">
+        <a class="text-decoration-none text-white-50" href="#hero" aria-label="Back to top">↑ Back to top</a>
+        <span class="mx-2">•</span>
+        <span>© <span id="year"></span> Orbital Demo</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Small script to set current year in footer -->
+    <script>
+      // Update footer year dynamically
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
