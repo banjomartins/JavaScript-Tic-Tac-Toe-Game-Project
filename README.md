@@ -23,6 +23,17 @@ This project is an interactive web application demonstrating front-end fundament
 
 > Note: jQuery is loaded via CDN. Internet access is required unless you replace the CDN link with a local file.
 
+## Repository
+- GitHub: [JavaScript-Tic-Tac-Toe-Game-Project](https://github.com/banjomartins/JavaScript-Tic-Tac-Toe-Game-Project)
+- Clone with SSH:
+```bash
+git clone git@github.com:banjomartins/JavaScript-Tic-Tac-Toe-Game-Project.git
+```
+- Clone with HTTPS:
+```bash
+git clone https://github.com/banjomartins/JavaScript-Tic-Tac-Toe-Game-Project.git
+```
+
 ## Project Structure
 ```
 .
@@ -38,6 +49,8 @@ This project is an interactive web application demonstrating front-end fundament
 - Internet connection (only needed to fetch jQuery from CDN)
 
 ### Run Locally
+You can also clone the repository first (see Repository section above), then open the HTML file.
+
 Option A: Open the HTML file directly
 1. Open the project folder.
 2. Double-click `Project.html` to open it in your browser.
